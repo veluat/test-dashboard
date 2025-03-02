@@ -1,0 +1,21 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+button {
+  all: unset;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+  padding: 0 48px;
+}

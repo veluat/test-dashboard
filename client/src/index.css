@@ -1,0 +1,33 @@
+:root {
+    --font-family: "Montserrat", sans-serif;
+    --font-family-Roboto: "Roboto", sans-serif;
+    --color-background: #fafafa;
+    --color-input-background: #ebebeb;
+    --color-text-primary: #222222;
+    --color-text-white: #ffffff;
+    --color-text: #474747;
+    --color-text-light: #5c5c5c;
+    --color-text-placeholder: #d1d1d1;
+
+    --color-accent-orange: #ff8346;
+    --color-accent-green: #2ee5ac;
+    --color-accent-red: #fe4848;
+    --color-accent-pink: #e14165;
+    --color-accent-gray: #7d7d7d;
+    --color-accent-lavender: #8686ff;
+    --color-accent-lavender-light: #c2c2ff;
+
+    --color-input-border: #ebebeb;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-text-primary);
+    padding: 0 48px;
+}

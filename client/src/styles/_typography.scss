@@ -1,0 +1,40 @@
+:root {
+  --font-family-primary: "Montserrat", sans-serif;
+  --font-family-secondary: "Roboto", sans-serif;
+
+  --font-size-heading: 26px;
+  --font-weight-heading: bold;
+  --font-heading: var(--font-weight-heading) var(--font-size-heading) var(--font-family-primary);
+
+  --font-size-table-header: 11px;
+  --font-weight-table-header: medium;
+  --font-table-header: var(--font-weight-table-header) var(--font-size-table-header) var(--font-family-secondary);
+
+  --font-size-table-column-name: 13px;
+  --font-weight-table-column-name: medium;
+  --font-table-column-name: var(--font-weight-table-column-name) var(--font-size-table-column-name) var(--font-family-secondary);
+
+  --font-size-table-column-type: 12px;
+  --font-weight-table-column-type: regular;
+  --font-table-column-type: var(--font-weight-table-column-type) var(--font-size-table-column-type) var(--font-family-secondary);
+
+  --font-size-table-column-status: 12px;
+  --font-weight-table-column-status: medium;
+  --font-table-column-status: var(--font-weight-table-column-status) var(--font-size-table-column-status) var(--font-family-secondary);
+
+  --font-size-table-column-site: 12px;
+  --font-weight-table-column-site: regular;
+  --font-table-column-site: var(--font-weight-table-column-site) var(--font-size-table-column-site) var(--font-family-secondary);
+
+  --font-size-input: 14px;
+  --font-weight-input: regular;
+  --font-input: var(--font-weight-input) var(--font-size-input) var(--font-family-secondary);
+
+  --font-size-button: 12px;
+  --font-weight-button: semiBold;
+  --font-button: var(--font-weight-button) var(--font-size-button) var(--font-family-primary);
+
+  --font-size-body: 14px;
+  --font-weight-body: semiBold;
+  --font-body: var(--font-weight-body) var(--font-size-body) var(--font-family-primary);
+}
