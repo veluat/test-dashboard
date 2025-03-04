@@ -1,0 +1,31 @@
+.root {
+  font: var(--font-table-header);
+  color: var(--color-text-light);
+
+  th {
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    &:first-child {
+      padding-left: 11px;
+    }
+
+    &:last-child {
+      text-align: right;
+      padding-right: 12px;
+    }
+  }
+
+  p {
+    width: fit-content;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+
+  .chevron {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+}

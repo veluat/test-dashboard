@@ -11,14 +11,15 @@ type Props = {
 export const Input = ({handleSearch, resultsNum, value}: Props) => {
   return (
     <div className={styles.root}>
-      <SearchIcon/>
+      <SearchIcon className={styles.icon}/>
       <input
+        className={styles.input}
         type='text'
         placeholder='What test are you looking for?'
         onChange={handleSearch}
         value={value}
       />
-      <span>{resultsNum} tests</span>
+      <span className={styles.counter}>{resultsNum} tests</span>
     </div>
   )
 }

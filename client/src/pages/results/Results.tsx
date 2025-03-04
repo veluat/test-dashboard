@@ -1,8 +1,8 @@
 import {Header} from '../../cmponents/header'
 import {useParams} from 'react-router-dom'
 import {TextLink} from '../../cmponents/textLink'
-import styles from './Results.module.scss'
 import {useTestData} from '../../hooks'
+import {PageWrapper} from '../../cmponents/pageWrapper'
 
 export const Results = () => {
   const {testId} = useParams<{ testId: string }>()
@@ -13,9 +13,9 @@ export const Results = () => {
   if (!test) return <div>No test found</div>
 
   return (
-    <div className={styles.root}>
+    <PageWrapper>
       <Header heading={'Results'} subHeading={test?.name}/>
       <TextLink text={'Back'} to={'/'}/>
-    </div>
+    </PageWrapper>
   )
 }

@@ -2,6 +2,7 @@ import { TableHeader } from '../tableHeader';
 import { TableRow } from '../tableRow';
 import { FormattedData } from '../../types';
 import { Button } from '../../types';
+import styles from './Table.module.scss'
 
 type Props = {
   data: FormattedData[];
@@ -13,7 +14,7 @@ export const Table = ({ data, handleSort }: Props) => {
     Math.random() < 0.5 ? Button.RESULTS : Button.FINALIZE;
 
   return (
-    <table>
+    <table className={styles.root}>
       <TableHeader handleSort={handleSort} />
       <tbody>
       {data.map((item) => (

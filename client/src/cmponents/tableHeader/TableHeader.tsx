@@ -1,27 +1,29 @@
 import {FormattedData} from '../../types'
+import {ChevronIcon} from '../../assets'
+import styles from './TableHeader.module.scss'
 
 type Props = {
   handleSort: (key: keyof FormattedData) => void;
 };
 
-export const TableHeader = ({ handleSort }: Props) => {
+export const TableHeader = ({handleSort}: Props) => {
   return (
-    <thead>
+    <thead className={styles.root}>
     <tr>
       <td>
-        <p onClick={() => handleSort('name')}>NAME</p>
+        <p onClick={() => handleSort('name')}>Name</p>
+      </td>
+      <td className={styles.chevron}>
+        <p onClick={() => handleSort('type')}>Type</p>
+        <ChevronIcon/>
       </td>
       <td>
-        <p onClick={() => handleSort('type')}>TYPE</p>
+        <p onClick={() => handleSort('status')}>Status</p>
       </td>
-      <td>
-        <p onClick={() => handleSort('status')}>STATUS</p>
+      <td colSpan={2}>
+        <p onClick={() => handleSort('siteUrl')}>Site</p>
       </td>
-      <td>
-        <p onClick={() => handleSort('siteUrl')}>SITE</p>
-      </td>
-      <td></td>
     </tr>
     </thead>
-  );
-};
+  )
+}

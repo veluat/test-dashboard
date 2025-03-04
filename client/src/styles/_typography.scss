@@ -1,40 +1,48 @@
 :root {
   --font-family-primary: "Montserrat", sans-serif;
   --font-family-secondary: "Roboto", sans-serif;
+  --font-family-nunito: "Nunito", sans-serif;
 
   --font-size-heading: 26px;
-  --font-weight-heading: bold;
+  --font-weight-heading: 700;
   --font-heading: var(--font-weight-heading) var(--font-size-heading) var(--font-family-primary);
 
   --font-size-table-header: 11px;
-  --font-weight-table-header: medium;
+  --font-weight-table-header: 500;
   --font-table-header: var(--font-weight-table-header) var(--font-size-table-header) var(--font-family-secondary);
 
   --font-size-table-column-name: 13px;
-  --font-weight-table-column-name: medium;
+  --font-weight-table-column-name: 500;
   --font-table-column-name: var(--font-weight-table-column-name) var(--font-size-table-column-name) var(--font-family-secondary);
 
   --font-size-table-column-type: 12px;
-  --font-weight-table-column-type: regular;
+  --font-weight-table-column-type: 400;
   --font-table-column-type: var(--font-weight-table-column-type) var(--font-size-table-column-type) var(--font-family-secondary);
 
   --font-size-table-column-status: 12px;
-  --font-weight-table-column-status: medium;
+  --font-weight-table-column-status: 500;
   --font-table-column-status: var(--font-weight-table-column-status) var(--font-size-table-column-status) var(--font-family-secondary);
 
   --font-size-table-column-site: 12px;
-  --font-weight-table-column-site: regular;
+  --font-weight-table-column-site: 400;
   --font-table-column-site: var(--font-weight-table-column-site) var(--font-size-table-column-site) var(--font-family-secondary);
 
   --font-size-input: 14px;
-  --font-weight-input: regular;
+  --font-weight-input: 400;
   --font-input: var(--font-weight-input) var(--font-size-input) var(--font-family-secondary);
 
   --font-size-button: 12px;
-  --font-weight-button: semiBold;
+  --font-weight-button: 600;
   --font-button: var(--font-weight-button) var(--font-size-button) var(--font-family-primary);
 
   --font-size-body: 14px;
-  --font-weight-body: semiBold;
+  --font-weight-body: 600;
   --font-body: var(--font-weight-body) var(--font-size-body) var(--font-family-primary);
+
+  --font-size-back-btn: 18px;
+  --font-weight-back-btn: 700;
+  --font-back-btn: var(--font-weight-back-btn) var(--font-size-back-btn) var(--font-family-nunito);
 }
+
+
+

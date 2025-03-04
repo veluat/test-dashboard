@@ -46,14 +46,14 @@ export const TableRow = ({ item, buttonType }: Props) => {
       <td className={styles.name}>{name}</td>
       <td className={styles.type}>{getTypeDisplay(type)}</td>
       <td className={styles.status}>{getStatusDisplay(status)}</td>
-      <td className={styles.site}>{siteUrl}</td>
-      <td>
+      <td colSpan={2} className={styles.site}>
+        {siteUrl}
         <ButtonLink
-          to={actionUrl}
-          text={buttonType === Button.RESULTS ? 'Results' : 'Finalize'}
-          color={buttonType === Button.RESULTS ? 'results' : 'finalize'}
-        />
-      </td>
+        to={actionUrl}
+        text={buttonType === Button.RESULTS ? 'Results' : 'Finalize'}
+        color={buttonType === Button.RESULTS ? 'results' : 'finalize'}
+      /></td>
+
     </tr>
   );
 };

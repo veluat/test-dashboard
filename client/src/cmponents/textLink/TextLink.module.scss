@@ -1,3 +1,6 @@
 .root {
-
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  font: var(--font-back-btn);
 }
