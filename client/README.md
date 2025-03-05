@@ -1,54 +1,109 @@
-# React + TypeScript + Vite
+# Test Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The project is a dashboard for displaying and managing test data. It includes a table with the ability to sort data by various columns, filter data, and display data status.
 
-Currently, two official plugins are available:
+## Key Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Data Sorting**: Ability to sort data by columns (Name, Type, Status, Site).
+- **Data Filtering**:  Search data by keywords.
+- **Status Display**: Data is displayed according to its current status (Draft, Online, Paused, Stopped).
 
-## Expanding the ESLint configuration
+## Dependencies
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **React**: Library for building user interfaces.
+- **React DOM**: DOM rendering for React.
+- **React Router DOM**: Routing for React applications.
+- **Classnames**: Utility for conditionally joining class names.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Development Dependencies
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- **Vite**: Fast build tool and development server.
+- **Vitest**: Testing framework.
+- **ESLint**: Linting tool for JavaScript/TypeScript.
+- **TypeScript**: Static type checking.
+- **MSW (Mock Service Worker)**: API mocking for tests.
+- **Sass**: CSS preprocessor for styling.
+- **Testing Library**: Utilities for testing React components.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Available Scripts
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+- **`pnpm dev`**: Start the development server.
+- **`pnpm build`**: Build the project for production.
+- **`pnpm lint`**: Run ESLint to check code quality.
+- **`pnpm preview`**: Preview the production build locally.
+- **`pnpm test`**: Run all tests.
+- **`pnpm test:watch`**: Run tests in watch mode.
+- **`pnpm test:coverage`**: Run tests and generate coverage report.
+
+## Installation
+
+1. Ensure you have [Node.js](https://nodejs.org/) (version 16 or higher) and [PNPM](https://pnpm.io/).
+
+2. Clone the repository:
+
+   ```bash
+   git clone https://github.com/veluat/test-dashboard.git
+   cd test-dashboard/client
+   ```
+   
+3. Install dependencies:
+
+   ```bash
+   pnpm install
+   ```
+
+## Running the Project
+1. Start the project in development mode:
+
+   ```bash
+   pnpm run dev
+   ```
+   
+2. Open your browser and navigate to:
+
+   ```bash
+   http://localhost:5173
+   ```
+   
+3. (Optional) If you need to start the server, use the command:
+
+   ```bash
+   npm start
+   ```
+   
+## Testing
+
+**To run tests, use the command:**
+
+   ```bash
+   pnpm test
+   ```
+
+**Tests include:**
+
+- Unit tests for hooks (e.g., useSortedData, useFetchData).
+
+- Integration tests for components (e.g., Dashboard).
+
+## Test Coverage
+
+To check test coverage, run:
+
+   ```bash
+   pnpm test:coverage
+   ```
+This will generate a coverage report in the coverage/ directory.
+
+
+## Linting
+
+- **Linting**: Run ESLint to check for code issues:
+
+  ```bash
+  pnpm lint
+   ```
+
+## Project Structure
+
+![Структура проекта](src/assets/structure.png)
+
