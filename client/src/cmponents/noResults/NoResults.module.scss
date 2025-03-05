@@ -1,0 +1,9 @@
+.noResults {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 63px;
+  padding: 149px;
+  font: var(--font-no-results);
+}
