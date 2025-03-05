@@ -1,4 +1,4 @@
-import styles from './Header.module.scss';
+import styles from './Header.module.scss'
 
 type Props = {
   heading: string,
@@ -11,5 +11,5 @@ export const Header = ({heading, subHeading}: Props) => {
       <h1>{heading}</h1>
       {subHeading && <p className={styles.subHeading}>{subHeading}</p>}
     </header>
-  );
-};
+  )
+}

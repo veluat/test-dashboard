@@ -21,10 +21,13 @@
     display: flex;
     gap: 8px;
     align-items: center;
+
+    svg {
+      transition: transform 0.2s ease-in-out;
+    }
   }
 
   .rotated {
     transform: rotate(180deg);
-    transition: transform 0.2s ease-in-out;
   }
 }

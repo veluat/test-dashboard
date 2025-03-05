@@ -3,19 +3,14 @@
   border-collapse: separate;
   border-spacing: 0 5px;
 
-  th, td {
+  th,
+  td {
     &:first-child {
       width: 45%;
     }
 
-    &:nth-child(2) {
-      width: auto;
-    }
-
-    &:nth-child(3) {
-      width: auto;
-    }
-
+    &:nth-child(2),
+    &:nth-child(3),
     &:nth-child(4) {
       width: auto;
     }

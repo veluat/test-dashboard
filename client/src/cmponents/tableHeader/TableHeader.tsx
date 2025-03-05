@@ -1,4 +1,5 @@
 import {useState} from 'react'
+import classNames from 'classnames'
 import {FormattedData} from '../../types'
 import {ChevronIcon} from '../../assets'
 import styles from './TableHeader.module.scss'
@@ -24,7 +25,7 @@ export const TableHeader = ({handleSort}: Props) => {
       </td>
       <td className={styles.chevron}>
         <p onClick={handleTypeSort}>Type</p>
-        <ChevronIcon className={isTypeSorted ? styles.rotated : ''}/>
+        <ChevronIcon className={classNames({[styles.rotated]: isTypeSorted})}/>
       </td>
       <td>
         <p onClick={() => handleSort('status')}>Status</p>

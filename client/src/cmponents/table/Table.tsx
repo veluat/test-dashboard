@@ -1,7 +1,7 @@
-import { TableHeader } from '../tableHeader';
-import { TableRow } from '../tableRow';
-import { FormattedData } from '../../types';
-import { Button } from '../../types';
+import {TableHeader} from '../tableHeader'
+import {TableRow} from '../tableRow'
+import {FormattedData} from '../../types'
+import {Button} from '../../types'
 import styles from './Table.module.scss'
 
 type Props = {
@@ -9,13 +9,13 @@ type Props = {
   handleSort: (key: keyof FormattedData) => void;
 };
 
-export const Table = ({ data, handleSort }: Props) => {
+export const Table = ({data, handleSort}: Props) => {
   const getRandomButtonType = () =>
-    Math.random() < 0.5 ? Button.RESULTS : Button.FINALIZE;
+    Math.random() < 0.5 ? Button.RESULTS : Button.FINALIZE
 
   return (
     <table className={styles.root}>
-      <TableHeader handleSort={handleSort} />
+      <TableHeader handleSort={handleSort}/>
       <tbody>
       {data.map((item) => (
         <TableRow
@@ -26,5 +26,5 @@ export const Table = ({ data, handleSort }: Props) => {
       ))}
       </tbody>
     </table>
-  );
-};
+  )
+}
