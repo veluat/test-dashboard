@@ -1,19 +1,19 @@
 export enum Type {
-  CLASSIC = "CLASSIC",
-  SERVER_SIDE = "SERVER_SIDE",
-  MVT = "MVT",
+  CLASSIC = 'CLASSIC',
+  SERVER_SIDE = 'SERVER_SIDE',
+  MVT = 'MVT',
 }
 
 export enum Status {
-  DRAFT = "DRAFT",
-  ONLINE = "ONLINE",
-  PAUSED = "PAUSED",
-  STOPPED = "STOPPED",
+  DRAFT = 'DRAFT',
+  ONLINE = 'ONLINE',
+  PAUSED = 'PAUSED',
+  STOPPED = 'STOPPED',
 }
 
 export enum Button {
-  FINALIZE = "FINALIZE",
-  RESULTS = "RESULTS",
+  FINALIZE = 'FINALIZE',
+  RESULTS = 'RESULTS',
 }
 
 export interface Site {

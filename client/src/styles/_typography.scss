@@ -7,6 +7,10 @@
   --font-weight-heading: 700;
   --font-heading: var(--font-weight-heading) var(--font-size-heading) var(--font-family-primary);
 
+  --font-size-no-results: 18px;
+  --font-weight-no-results: 400;
+  --font-no-results: var(--font-weight-no-results) var(--font-size-no-results) var(--font-family-primary);
+
   --font-size-table-header: 11px;
   --font-weight-table-header: 500;
   --font-table-header: var(--font-weight-table-header) var(--font-size-table-header) var(--font-family-secondary);

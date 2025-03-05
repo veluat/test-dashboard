@@ -4,8 +4,7 @@ import {FormattedData} from '../../types'
 import {Header} from '../../cmponents/header'
 import {Input} from '../../cmponents/input'
 import {Table} from '../../cmponents/table'
-import {ButtonLink} from '../../cmponents/buttonLink'
-import styles from './Dashboard.module.scss'
+import {NoResults} from '../../cmponents/noResults'
 
 export const Dashboard = () => {
   const {tests, sites, loading, error} = useFetchData()
@@ -51,7 +50,7 @@ export const Dashboard = () => {
   if (error) return <div>Error: {error}</div>
 
   return (
-    <div className={styles.dashboard}>
+    <div>
       <Header heading='Dashboard'/>
       <Input
         value={searchQuery}
@@ -61,13 +60,7 @@ export const Dashboard = () => {
       {filteredData.length > 0 ? (
         <Table data={sortedData} handleSort={handleSort}/>
       ) : (
-        <div className={styles.noResults}>
-          <h2>Your search did not match any results</h2>
-          <ButtonLink
-            text='Reset'
-            onClick={handleReset}
-          />
-        </div>
+        <NoResults handleReset={handleReset}/>
       )}
     </div>
   )
